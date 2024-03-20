@@ -1,0 +1,13 @@
+html{
+    background-color: #0A758F;
+}
+.mapdiv path {
+    fill: rgb(34, 32, 32);
+    stroke: rgb(211, 211, 186);
+    stroke-width: 4px;
+    transition: fill 0.3s;
+}
+
+.mapdiv {
+    fill:rgb(143, 26, 26)
+}

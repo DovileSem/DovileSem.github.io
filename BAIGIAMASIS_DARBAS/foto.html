@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irec Foto</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/foto-style.css">
+   <!-- Include Glide.js CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+   <!-- Include your own CSS for styling -->
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="tower-header">
+            <div>Division</div>
+            <nav>
+                <ul>
+                    <li id="page1_link" class="active">
+                        <a href="index.html">Apie mus</a>
+                    </li>
+                    <li id="page2_link">
+                        <a href="index.html#services">Teikiamos paslaugos</a>
+                    </li>
+                    <li id="page3_link">
+                        <a href="index.html#client">Mūsų klientai</a>
+                    </li>
+                    <li id="page4_link">
+                        <a href="#" target="_blank">Foto galerija</a>
+                    </li>
+                    <li id="page5_link">
+                        <a href="index.html#contact">Kontaktinė forma</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="glide">
+        <div>
+            <br>
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide"><img src="https://picsum.photos/801/600" alt="Image 1"></li>
+            <li class="glide__slide"><img src="https://picsum.photos/802/600" alt="Image 2"></li>
+            <li class="glide__slide"><img src="https://picsum.photos/803/600" alt="Image 3"></li>
+            <!-- Add more slides as needed -->
+          </ul>
+        </div>
+        <br>
+        </div>
+      
+        <!-- Add navigation buttons -->
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+        </div>
+      </div>
+      
+      <!-- Include Glide.js and its dependencies -->
+      <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+      <!-- Initialize Glide.js -->
+      <script>
+        new Glide('.glide', {
+          type: 'carousel', // Set to 'slider' if you want single item per view
+          startAt: 3,
+          perView: 2, // Number of slides per view
+          focusAt: 'center', // Center the active slide
+          gap: 20, // Space between slides
+        //   breakpoints: {
+        //     768: {
+        //       perView: 1 // Adjust for smaller screens
+        //     }
+        //   }
+        }).mount();
+      </script>
+
+</div>
+<footer>
+    <div class="footer-content">
+        <p><strong>Adresas:</strong> Konstitucijos pr. 15, Vilnius</p>
+        <p><strong>Telefonas:</strong> <a href="tel:+37068683858" class="phone-link">+370 686 83858</a></p>
+        <p><strong>Darbo laikas:</strong> I-V 8:00 - 17:00 </p>
+        <p><strong>E-mail:</strong> <a href="mailto:info@example.com" class="email-link">info@example.com</a></p>
+
+    </div>
+</footer>
+
+
+</body>
+</html>

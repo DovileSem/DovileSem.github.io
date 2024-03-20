@@ -1,0 +1,12 @@
+.glide__slide img {
+    width: 100%;
+    height: auto;
+  }
+
+  .glide img {
+    width: 100%;
+}
+
+.glide {
+    background: #0A758F
+}
